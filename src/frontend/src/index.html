@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'> <!--TODO REMOVE FOR PRODUCTION -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div id="control">
+    <div id="data-flow-selector-on-control" class="control-container">
+        <div id="data-flow-halo" class="halo">
+            <p id="data-flow-selector-on-control-label">LOADING</p>
+        </div>
+    </div>
+
+    <span class="control-separator"></span>
+
+    <div id="aggregation-container" class="control-container">
+        <div id="aggregation-halo" class="halo">
+            <input id="aggregation-slider" class="slider" type="range" min="0" max="100" value="50" step="1">
+        </div>
+    </div>
+
+    <span class="control-separator"></span>
+
+    <div id="timeframe-selector-on-control" class="control-container">
+        <div id="timeframe-halo" class="halo">
+            <span id="timeframe-input" contenteditable="true" role="textbox">1D</span>
+        </div>
+    </div>
+</div>
+
+<span id="main-separator"></span>
+
+<div id="content">
+</div>
+
+</body>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="config.js"></script>
+<script src="layout.js"></script>
+<script src="charting.js"></script>
+<script src="websocket.js"></script>
+<script src="app.js"></script>
+
+
+</html>
