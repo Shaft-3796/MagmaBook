@@ -8,11 +8,10 @@ import math
 import os
 import threading
 
-from Collector import Collector
-from Connectors import ConnectorBindings
-from DataFlow import DataFlow
-from ComputingEngine import ComputingEngine
-import MagmaBookApi
+from src.backend.MagmaBook.Collector import Collector
+from src.backend.MagmaBook.Connectors import ConnectorBindings
+from src.backend.MagmaBook.DataFlow import DataFlow
+from src.backend.MagmaBook.ComputingEngine import ComputingEngine
 
 
 class MountingError(Exception):

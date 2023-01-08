@@ -3,12 +3,11 @@ Collector.py
 This file contains the Collector class wich links a dataflow with a connector and handle data retrieval.
 """
 import asyncio
-import os
 import time
 
 import threading
 
-from DataFlow import FlowType
+from src.backend.MagmaBook.DataFlow import FlowType
 
 
 class Collector:
